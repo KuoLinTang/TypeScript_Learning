@@ -1,0 +1,23 @@
+{
+    // tsconfig.json is a configuration file for TS compiling
+    // the TS compiler will compile the TS code according to the settings in tsconfig.json
+    // include and exclude
+    // include all files under the src/ directory except files under the src/test/ directory
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "./src/test/**/*"
+    ],
+    // make configurations of the compiler (JSON format)
+    // it decides how the comiler compiles our TS files
+    "compilerOptions": {
+        // Define ES version
+        // In default, our TS files will be compiled into ES3 version (high compatibility)
+        // The latest version: ESNext
+        // All options: 'es3', 'es5', 'es6', 'es2015', 'es2016', 'es2017', 'es2018', 'es2019', 'es2020', 'es2021', 'es2022', 'esnext'
+        "target": "ES6",
+        // Define module ES version
+        "module": "ES6"
+    }
+}
