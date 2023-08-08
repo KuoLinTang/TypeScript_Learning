@@ -16,8 +16,47 @@
         // In default, our TS files will be compiled into ES3 version (high compatibility)
         // The latest version: ESNext
         // All options: 'es3', 'es5', 'es6', 'es2015', 'es2016', 'es2017', 'es2018', 'es2019', 'es2020', 'es2021', 'es2022', 'esnext'
-        "target": "ES6",
+        "target": "ES2015",
         // Define module ES version
-        "module": "ES6"
+        // All options: 'none', 'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'es2020', 'es2022', 'esnext', 'node16', 'nodenext'
+        "module": "system",
+        // Library
+        // To specify libraries used in the project
+        // All options: 'es5', 'es6', 'es2015', 'es7', 'es2016', 'es2017', 'es2018', 'es2019', 'es2020', 
+        // 'es2021', 'es2022', 'es2023', 'esnext', 'dom', 'dom.iterable', 'webworker', 'webworker.importscripts', 
+        // 'webworker.iterable', 'scripthost', 'es2015.core', 'es2015.collection', 'es2015.generator', 
+        // 'es2015.iterable', 'es2015.promise', 'es2015.proxy', 'es2015.reflect', 'es2015.symbol', 
+        // 'es2015.symbol.wellknown', 'es2016.array.include', 'es2017.object', 'es2017.sharedmemory', 'es2017.string', 
+        // 'es2017.intl', 'es2017.typedarrays', 'es2018.asyncgenerator', 'es2018.asynciterable', 'es2018.intl', 
+        // 'es2018.promise', 'es2018.regexp', 'es2019.array', 'es2019.object', 'es2019.string', 'es2019.symbol', 
+        // 'es2019.intl', 'es2020.bigint', 'es2020.date', 'es2020.promise', 'es2020.sharedmemory', 'es2020.string', 
+        // 'es2020.symbol.wellknown', 'es2020.intl', 'es2020.number', 'es2021.promise', 'es2021.string', 
+        // 'es2021.weakref', 'es2021.intl', 'es2022.array', 'es2022.error', 'es2022.intl', 'es2022.object', 
+        // 'es2022.sharedmemory', 'es2022.string', 'es2022.regexp', 'es2023.array', 'esnext.array', 'esnext.symbol', 
+        // 'esnext.asynciterable', 'esnext.intl', 'esnext.bigint', 'esnext.string', 'esnext.promise', 'esnext.weakref', 
+        // 'decorators', 'decorators.legacy'
+        // "lib": ["es6", "dom],
+        // outDir: define the path of the output JS files
+        // if the folder does not exist, the compiler will create a new folder
+        "outDir": "./dist",
+        // outFile: combine all JS files into one
+        // when combining two and more JS files with import and export statements,
+        // we should specify our "module" property to be either 'amd' or 'system'
+        // "outFile": "./dist/app.js",
+        // allowJs: if there are JS files under our "include" directory,
+        // when allowJs is false, the JS files will not be processed and moved to the "outDir" folder
+        "allowJs": true,
+        // checkJs
+        // check syntax in the JS files and throw errors when the syntax doesn't match our TS syntax
+        // to enable checkJs, we also need to make allowJs be "true"
+        "checkJs": true,
+        // removeComments: decide if removing comments
+        "removeComments": true,
+        // noEmit: decide if not to generate compiled files
+        // not generate files, but can be used to check syntax
+        "noEmit": false,
+        // noEmitOnError: similar to noEmit
+        // only generate compiled files when no error are thrown
+        "noEmitOnError": false
     }
 }
