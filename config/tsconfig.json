@@ -19,7 +19,7 @@
         "target": "ES2015",
         // Define module ES version
         // All options: 'none', 'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'es2020', 'es2022', 'esnext', 'node16', 'nodenext'
-        "module": "system",
+        "module": "ES2015",
         // Library
         // To specify libraries used in the project
         // All options: 'es5', 'es6', 'es2015', 'es7', 'es2016', 'es2017', 'es2018', 'es2019', 'es2020', 
@@ -57,6 +57,8 @@
         "noEmit": false,
         // noEmitOnError: similar to noEmit
         // only generate compiled files when no error are thrown
-        "noEmitOnError": false
+        "noEmitOnError": false,
+        // alwaysStrict: use strict mode in JS
+        "alwaysStrict": true
     }
 }
