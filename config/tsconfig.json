@@ -59,6 +59,12 @@
         // only generate compiled files when no error are thrown
         "noEmitOnError": false,
         // alwaysStrict: use strict mode in JS
-        "alwaysStrict": true
+        "alwaysStrict": true,
+        // noImplicitAny: don't allow implicit any in the TS files
+        "noImplicitAny": true,
+        // noImplicitThis: don't allow implicit this in the TS files
+        "noImplicitThis": true,
+        // strictNullChecks: check if there is operation done on NULL
+        "strictNullChecks": true
     }
 }
